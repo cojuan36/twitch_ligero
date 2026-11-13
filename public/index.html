@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explorar · StreamLab</title>
+<link rel="stylesheet" href="/styles.css">
+<body>
+<header><a class="brand" href="/">▶ Stream<span>Lab</span></a><nav id="nav"></nav></header>
+<div class="layout" data-page="explore">
+<aside><h2>Canales</h2><div id="sidebar"></div></aside>
+<main><h1 id="heading">Explorar</h1><div id="filters" class="filters"></div>
+<div id="cards" class="grid"></div><p id="error" role="status"></p></main>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/vendor/hls.js/hls.min.js"></script>
+<script src="/common.js"></script>
+</body>
+</html>

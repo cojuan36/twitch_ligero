@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuenta · StreamLab</title>
+<link rel="stylesheet" href="/styles.css">
+<body>
+<header><a class="brand" href="/">▶ Stream<span>Lab</span></a><nav id="nav"></nav></header>
+<main data-page="login" class="narrow">
+<h1 id="heading">Iniciar sesión</h1>
+<form id="account" class="panel">
+<label>Usuario<input name="username" required maxlength="20" autocomplete="username"></label>
+<label>Contraseña<input name="password" required type="password" minlength="6"></label>
+<button id="submit">Entrar</button> <a id="switch-mode"></a>
+<p id="error" role="status"></p>
+</form></main>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/vendor/hls.js/hls.min.js"></script>
+<script src="/common.js"></script>
+</body>
+</html>

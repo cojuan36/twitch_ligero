@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi canal · StreamLab</title>
+<link rel="stylesheet" href="/styles.css">
+<body>
+<header><a class="brand" href="/">▶ Stream<span>Lab</span></a><nav id="nav"></nav></header>
+<main data-page="dashboard">
+<h1>Mi canal</h1><p id="status"></p>
+<div class="columns">
+<form id="profile" class="panel">
+<h2>Información del canal</h2>
+<label>Título<input name="title" maxlength="120" required></label>
+<label>Categoría<select name="category"></select></label>
+<label>Descripción<textarea name="bio" maxlength="300" rows="3"></textarea></label>
+<button>Guardar</button> <a id="view-channel">Ver canal</a>
+</form>
+<section class="panel">
+<h2>Conectar OBS Studio</h2>
+<p>En Ajustes → Emisión, selecciona Personalizado.</p>
+<label>Servidor<input id="rtmp" readonly></label>
+<label>Clave de transmisión<input id="key" type="password" readonly></label>
+<div class="filters"><button id="toggle-key">Mostrar clave</button><button id="regen">Regenerar clave</button></div>
+<p>Usa H.264 + AAC y un intervalo de fotogramas clave de 2 s.</p>
+</section>
+</div><p id="error" role="status"></p></main>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/vendor/hls.js/hls.min.js"></script>
+<script src="/common.js"></script>
+</body>
+</html>

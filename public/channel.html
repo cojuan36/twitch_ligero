@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canal · StreamLab</title>
+<link rel="stylesheet" href="/styles.css">
+<body>
+<header><a class="brand" href="/">▶ Stream<span>Lab</span></a><nav id="nav"></nav></header>
+<main data-page="channel" class="watch">
+<section>
+<div class="player"><video id="video" controls playsinline hidden></video><p id="offline">Canal desconectado</p></div>
+<h1 id="title"></h1><p id="metadata"></p>
+<p id="counts"></p><button id="follow" hidden></button>
+<p id="bio"></p><h2>Transmisiones anteriores</h2><div id="vods" class="filters"></div>
+<p id="error" role="status"></p>
+</section>
+<section class="panel chat"><h2>Chat en vivo</h2>
+<div id="messages" role="log"></div>
+<form id="chat"><label>Mensaje<input name="text" maxlength="300" required></label><button>Enviar</button></form>
+<p id="chat-error" role="status"></p>
+</section></main>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/vendor/hls.js/hls.min.js"></script>
+<script src="/common.js"></script>
+</body>
+</html>
