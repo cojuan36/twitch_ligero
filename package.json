@@ -1,0 +1,1 @@
+{"name":"streamlab","version":"1.0.0","private":true,"engines":{"node":">=22.13"},"scripts":{"start":"node server.js"},"dependencies":{"express":"^4.21.2","socket.io":"^4.8.1","bcryptjs":"^3.0.2","dotenv":"^16.4.7","hls.js":"^1.5.20","node-media-server":"2.7.0"}}
